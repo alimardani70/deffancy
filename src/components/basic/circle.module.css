@@ -1,0 +1,30 @@
+.levelBox:first-child .path{
+    display: none;
+}
+.pathBox:nth-child(odd) .path span:nth-child(odd){
+    visibility: hidden;
+}
+.pathBox:nth-child(even) .path span:nth-child(even){
+    visibility: hidden;
+}
+.path span{
+    height: 35px;
+}
+.path span:nth-child(odd){
+    background:
+            linear-gradient(to top right,
+            rgba(37,99,235,0) 0%,
+            rgba(37,99,235,0) calc(50% - 0.8px),
+            rgba(37,99,235,1) 50%,
+            rgba(37,99,235,0) calc(50% + 0.8px),
+            rgba(37,99,235,0) 100%);
+}
+.path span:nth-child(even){
+    background:
+            linear-gradient(to top left,
+            rgba(37,99,235,0) 0%,
+            rgba(37,99,235,0) calc(50% - 0.8px),
+            rgba(37,99,235,1) 50%,
+            rgba(37,99,235,0) calc(50% + 0.8px),
+            rgba(37,99,235,0) 100%);
+}
